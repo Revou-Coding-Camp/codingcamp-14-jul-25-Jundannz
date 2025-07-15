@@ -1,6 +1,45 @@
-.logo {
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height:1.0;
+}
+
+.navigasi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo{
     height: 4rem;
     width: auto;
     object-fit: contain;
-    padding-left: 20px;
+}
+
+.navigasi-menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navigasi-menu a{
+    color: green;
+}
+
+.form-kontak{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea{
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+#nama{
+    height: 30px;
+    width: auto;
+    border-radius: 10px;
 }
