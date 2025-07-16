@@ -27,9 +27,15 @@ body{
 }
 
 .form-kontak{
+    margin-right: 300px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.footer-wm{
+    text-align: end;
+    padding: 5px 20px;
 }
 
 input, textarea{
