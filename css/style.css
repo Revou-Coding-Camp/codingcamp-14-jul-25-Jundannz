@@ -3,6 +3,11 @@ body{
     line-height:1.0;
 }
 
+section{
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
 .navigasi{
     display: flex;
     justify-content: space-between;
@@ -24,6 +29,53 @@ body{
 
 .navigasi-menu a{
     color: green;
+}
+
+.welcome h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.company-image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.welcome h2{
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.welcome p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: gray;
+    margin-bottom: 30px;
+    font-weight: 0;
+}
+
+.welcome h3{
+    text-align: center;
+}
+
+.headquarters{
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.headquarters-image{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-us, .vission, .mission{
+    margin-top: 30px;
 }
 
 .form-kontak{
