@@ -29,6 +29,8 @@ section{
 
 .navigasi-menu a{
     color: green;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .welcome h1{
@@ -74,8 +76,31 @@ section{
     border-radius: 50%;
 }
 
+.profile{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+}
+
+.profile p{
+    text-align: justify;
+}
+
 .about-us, .vission, .mission{
     margin-top: 30px;
+}
+
+.about-us span, .vission span, .mission span{
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+.vission ul, .mission ul{
+    margin-top: 10px;
+    padding-left: 20px;
 }
 
 .form-kontak{
