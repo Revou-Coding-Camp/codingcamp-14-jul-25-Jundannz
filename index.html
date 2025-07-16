@@ -5,33 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Project Revou</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Javanese:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navigasi">
-            <div class="logo-container">
+            <div class="logo-placement">
                 <a href="#">
                     <img src="assets/logo.png" alt="Company Logo" class="logo">
                 </a>
             </div>
             <ul class="navigasi-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Our Profile</a></li>
-                <li><a href="#">Portofolio</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-profile">Our Profile</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
                 <li><a href="#message-us">Message Us</a></li>
             </ul>
         </nav>
     </header>
-    <section class="welcome">
-        <h1>Hi <span style="color: green;">Jundannz</span>, Welcome to Website!</h1>
+    <section id="home" class="welcome">
+        <h1>Hi <span style="color: green;">Nama</span>, Welcome to Website!</h1>
         <p>Ini adalah website latihan pertama</p>
-    </section>
-    <section class="headquarters">
+        <div class="company-image">
+            <img src="assets/company.jpg" alt="Company Image" class="company-image">
+        </div>
         <h1>Our Headquarters</h1>
+        <div class="headquarters">
+            <div class="head-jakarta">
+                <img src="assets/jakarta.jpg" alt="Jakarta Headquarters" class="headquarters-image">
+                <p>Jakarta</p>
+            </div>
+            <div class="head-bandung">
+                <img src="assets/bandung.jpg" alt="Bandung Headquarters" class="headquarters-image">
+                <p>Bandung</p>
+            </div>
+            <div class="head-surabaya">
+                <img src="assets/surabaya.jpg" alt="Surabaya Headquarters" class="headquarters-image">
+                <p>Surabaya</p>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2 id="message-us">Message Us</h2>
+    <section id="our-profile" class="profile">
+        <h1>Our Profile</h1>
+        <div class="about-us">
+            <span>About Us</span>
+            <p>Perusahaan Jundannz adalah perusahaan yang menawarkan jasa media kreatif digital dan IT yang dibangun sejak tahun 2020 lalu, saat ditengah tengah masa pandemi covid-19. Pada saat itu, semua aktivitas dialihkan menjadi daring. Perusahaan ini kami bangung untuk melayani berbagai macam kerjasama bisnis di bidang media kreatif dan IT. Perusahaan ini didirikan oleh alumni Ilmu Komputer UGM Jundan Saiful Haq. Setelah 5 tahun berjalan, perusahaan ini mennjadi tumbuh pesat, berkat para klien semua yang terhormat. Terima kasih telah memercayakan kerja sama di bidang digital ini bersama perusahaan kami.</p>
+        </div>
+        <div class="vission">
+            <h2>Vission & Mission</h2>
+            <span>Vission:</span>
+            <ul>
+                <li>Menjadi perusahaan digital yang terdepan di Indonesia</li>
+                <li>Mengembangkan inovasi digital yang bermanfaat bagi masyarakat</li>
+                <li>Membangun kerjasama yang saling menguntungkan dengan klien</li>
+            </ul>
+        </div>
+        <div class="mission">
+            <span>Mission</span>
+            <ul>
+                <li>Menyediakan layanan digital yang berkualitas tinggi</li>
+                <li>Mengembangkan produk digital yang inovatif</li>
+                <li>Membangun tim yang profesional dan berkompeten di bidangnya</li>
+            </ul>
+        </div>
+    </section>
+    <section id="portofolio" class="portofolio">
+        <h1>Portofolio</h1>
+    </section>
+    <section id="message-us" class="message">
+        <h2 id="message">Message Us</h2>
         <form class="form-kontak">
             <label for="nama">Nama :</label>
             <input type="text" id="nama" placeholder="Masukkan Nama Anda"><br>
