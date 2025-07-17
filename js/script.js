@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(){
+    const namaPengguna = prompt("Masukkan nama Anda:", "Pengguna");
 
+    if(namaPengguna){
+        document.querySelector("#home h1 span").textContent = namaPengguna;
+    }
 });
+
 function tampilkanPesan(e){
     e.preventDefault();
 

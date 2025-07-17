@@ -1,5 +1,5 @@
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height:1.0;
     margin: 30px;
 }
@@ -235,13 +235,13 @@ section{
 }
 
 input::placeholder, textarea::placeholder{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     color: grey;
 }
 
 input, textarea{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 8px;
     border: 1px solid grey;
     box-sizing: border-box;
@@ -249,7 +249,7 @@ input, textarea{
 }
 
 input[type="submit"]{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 15px;
@@ -261,7 +261,7 @@ input[type="submit"]{
 }
 
 input[type="text"]{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
     font-size: 15px;
     border: 1px solid #ccc;
