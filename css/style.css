@@ -296,5 +296,9 @@ input[type="date"]{
 .pesan-container .bold{
     font-weight: 600;
     display: inline-block;
-    width: 150px;
+    width: 120px;
+}
+
+#waktu-realtime{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
