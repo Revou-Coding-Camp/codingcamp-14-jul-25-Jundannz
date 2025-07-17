@@ -1,6 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     line-height:1.0;
+    margin: 30px;
 }
 
 section{
@@ -55,7 +56,7 @@ section{
 .welcome p{
     font-size: 1.2rem;
     text-align: center;
-    color: gray;
+    color: grey;
     margin-bottom: 30px;
     font-weight: 0;
 }
@@ -137,6 +138,7 @@ section{
 }
 
 .card-image {
+    aspect-ratio: 16/9;
     position: relative;
     width: 100%;
     height: 100%;
@@ -207,12 +209,21 @@ section{
 
 .message h1{
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     text-align: center;
 }
 
+.input-output{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
 .form-kontak{
-    margin-right: 50%;
+    flex-basis: 45%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -223,14 +234,67 @@ section{
     padding: 5px 20px;
 }
 
-input, textarea{
-    padding: 5px;
-    border-radius: 8px;
-    border: 1px solid grey;
+input::placeholder, textarea::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: grey;
 }
 
-#nama{
-    height: 30px;
-    width: auto;
-    border-radius: 10px;
+input, textarea{
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+input[type="submit"]{
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+input[type="text"]{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type="date"]{
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.pesan-container{
+    flex-basis: 55%;
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.pesan-container p{
+    margin: 8px 0;
+}
+
+.pesan-container .bold{
+    font-weight: 600;
+    display: inline-block;
+    width: 150px;
 }

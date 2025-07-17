@@ -81,7 +81,7 @@
                         <div class="card-text">
                             <h3>After Movie – Smago University Expo</h3>
                             <p>After Movie untuk SMAN 1 Godean, University Expo 2025</p>
-                            <a href="https://example.com" class="card-button" target="_blank">Lihat Detail</a>
+                            <a href="https://drive.google.com/file/d/1vtH2gW_4dUdP_cL-rILIef9-_cD6e6NS/view?usp=sharing" class="card-button" target="_blank">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
@@ -114,23 +114,24 @@
     </section>
     <section id="message-us" class="message">
         <h1>Message Us</h1>
-        <form class="form-kontak">
-            <label for="nama">Nama :</label>
-            <input type="text" id="nama" placeholder="Masukkan Nama Anda"><br>
-            <label for="tanggal">Tanggal Lahir : </label>
-            <input type="date" id="tanggal"><br>
-            <label>Jenis Kelamin : </label>
-            <div class="radio-group">
-                <input type="radio" name="gender" value="Laki-laki">Laki-laki
-                <input type="radio" name="gender" value="Perempuan">Perempuan<br>
-            </div>
-            <label for="pesan" style="vertical-align: top;">Pesan :</label>
-            <textarea id="pesan" rows="10" cols=50" placeholder="Masukkan pesan yang ingin anda sampaikan"></textarea><br>
-            <input type="submit" id="submit" value="Submit">
-        </form>
+        <div class="input-output">
+            <form class="form-kontak" onsubmit="tampilkanPesan(event)">
+                <label for="nama">Nama :</label>
+                <input type="text" id="nama" placeholder="Masukkan nama anda"><br>
+                <label for="tanggal">Tanggal Lahir : </label>
+                <input type="date" id="tanggal" placeholder="dd/mm/yyyy"><br>
+                <label>Jenis Kelamin : </label>
+                <div class="radio-group">
+                    <input type="radio" name="gender" value="Laki-laki">Laki-laki
+                    <input type="radio" name="gender" value="Perempuan">Perempuan<br><br>
+                </div>
+                <label for="pesan" style="vertical-align: top;">Pesan :</label>
+                <textarea id="pesan" rows="10" cols="50" placeholder="Masukkan pesan yang ingin anda sampaikan"></textarea><br>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+            <div class="pesan-container" id="hasilform"></div>
+        </div>
     </section>
-    <aside>
-    </aside>
     <footer>
         <div class="footer-wm">
             <p>Created by Jundannz</p>
