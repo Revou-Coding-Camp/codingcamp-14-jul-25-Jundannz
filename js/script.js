@@ -89,6 +89,10 @@ function tampilkanOutput(e) {
         alert("Tanggal lahir harus diisi.");
         return;
     }
+    if (tanggal && new Date(tanggal) > new Date()) {
+        alert("Tanggal lahir tidak boleh di masa depan.");
+        return;
+    }
     if (!gender) {
         alert("Jenis kelamin harus dipilih.");
         return;
@@ -99,4 +103,11 @@ function tampilkanOutput(e) {
     }
 
     updateFormData(nama, tanggal, gender, pesan);
+
+    document.getElementById("nama").value = '';
+    document.getElementById("tanggal").value = '';
+    document.querySelectorAll('input[name="gender"]').forEach(radio => {
+        radio.checked = false;
+    });
+    document.getElementById("pesan").value = '';
 }

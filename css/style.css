@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
     --primary-color: #65c1e0;
     --secondary-color: #2f8ed1;
@@ -15,7 +19,7 @@ header{
 }
 
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height:1.0;
     margin: 0;
     padding: 0;
@@ -301,13 +305,13 @@ section{
 }
 
 input::placeholder, textarea::placeholder{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     color: grey;
 }
 
 input, textarea{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     border-radius: 8px;
     border: 1px solid grey;
     box-sizing: border-box;
@@ -315,7 +319,7 @@ input, textarea{
 }
 
 input[type="submit"]{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 15px;
@@ -327,7 +331,7 @@ input[type="submit"]{
 }
 
 input[type="text"]{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 10px;
     font-size: 15px;
     border: 1px solid #ccc;
@@ -345,7 +349,7 @@ input[type="date"]{
 
 .pesan-container{
     flex-basis: 50%;
-    margin-top: 25px;
+    margin-top: 30px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -366,7 +370,7 @@ input[type="date"]{
 }
 
 #waktu-realtime{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #form-data-container{
@@ -437,7 +441,7 @@ input[type="date"]{
     .vission ol, .mission ol{
         margin-top: 10px;
         padding-left: 20px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .portofolio{
@@ -489,7 +493,7 @@ input[type="date"]{
 
     .input-output{
         flex-direction: column;
-        padding: 0;
+        padding: 0 15px;
         gap: 10px;
     }
 
@@ -502,6 +506,7 @@ input[type="date"]{
         width: 100%;
         margin-top: 0;
         padding: 15px;
+        box-sizing: border-box;
     }
 
     #form-data-container{
